@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -71,6 +70,13 @@
       object-fit: contain;
       background-color: #e5e7eb;
     }
+    .portfolio-item-homepage {
+      padding: 1rem;
+      background-color: #f9fafb;
+      font-size: 0.9rem;
+      color: #4b5563;
+      border-bottom: 1px solid #e5e7eb;
+    }
     .portfolio-item-content {
       padding: 1.5rem;
     }
@@ -104,12 +110,54 @@
     footer p {
       margin: 0.5rem 0;
     }
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .contact-buttons a {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      color: white;
+      transition: background-color 0.3s;
+    }
+    .whatsapp-button {
+      background-color: #25D366;
+    }
+    .whatsapp-button:hover {
+      background-color: #20b358;
+    }
+    .instagram-button {
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    }
+    .instagram-button:hover {
+      opacity: 0.9;
+    }
+    .gmail-button {
+      background-color: #D14836;
+    }
+    .gmail-button:hover {
+      background-color: #c13524;
+    }
+    .contact-buttons img {
+      width: 20px;
+      height: 20px;
+      margin-right: 0.5rem;
+    }
     @media (max-width: 600px) {
       header h1 {
         font-size: 2rem;
       }
       .portfolio-grid {
         grid-template-columns: 1fr;
+      }
+      .contact-buttons {
+        flex-direction: column;
       }
     }
   </style>
@@ -132,6 +180,9 @@
     <div class="portfolio-grid">
       <div class="portfolio-item">
         <img src="https://via.placeholder.com/300x150.png?text=Mandrake+Grifes" alt="Mandrake Grifes Logo">
+        <div class="portfolio-item-homepage">
+          <strong>Página Inicial:</strong> Banner com coleção sazonal de roupas modernas, vitrine com camisetas e acessórios, seções de novidades e mais vendidos, e navegação para categorias como Masculino e Feminino.
+        </div>
         <div class="portfolio-item-content">
           <h3>Mandrake Grifes</h3>
           <p><strong>Categoria:</strong> Loja de Roupas</p>
@@ -141,6 +192,9 @@
       </div>
       <div class="portfolio-item">
         <img src="https://via.placeholder.com/300x150.png?text=No+Hype+CG" alt="No Hype CG Logo">
+        <div class="portfolio-item-homepage">
+          <strong>Página Inicial:</strong> Banner com modelo em cenário urbano vestindo roupas streetwear, grid de produtos como moletons e bonés, seções de lançamentos e promoções, e integração com Instagram.
+        </div>
         <div class="portfolio-item-content">
           <h3>No Hype CG</h3>
           <p><strong>Categoria:</strong> Loja de Roupas</p>
@@ -150,6 +204,9 @@
       </div>
       <div class="portfolio-item">
         <img src="https://via.placeholder.com/300x150.png?text=Mundo+dos+Esmaltes" alt="Mundo dos Esmaltes Logo">
+        <div class="portfolio-item-homepage">
+          <strong>Página Inicial:</strong> Banner com unhas decoradas, vitrine de esmaltes e kits de beleza, galeria de nail art, e seções de dicas de cuidados com unhas.
+        </div>
         <div class="portfolio-item-content">
           <h3>Mundo dos Esmaltes</h3>
           <p><strong>Categoria:</strong> Loja de Produtos de Beleza</p>
@@ -159,6 +216,9 @@
       </div>
       <div class="portfolio-item">
         <img src="https://via.placeholder.com/300x150.png?text=Hype+Car" alt="Hype Car Logo">
+        <div class="portfolio-item-homepage">
+          <strong>Página Inicial:</strong> Banner com carro em oficina, lista de serviços como troca de óleo e alinhamento, formulário de agendamento, e galeria de reparos realizados.
+        </div>
         <div class="portfolio-item-content">
           <h3>Hype Car Centro Automotivo</h3>
           <p><strong>Categoria:</strong> Loja de Mecânica</p>
@@ -168,6 +228,9 @@
       </div>
       <div class="portfolio-item">
         <img src="https://via.placeholder.com/300x150.png?text=MP+Cookies" alt="MP Cookies Logo">
+        <div class="portfolio-item-homepage">
+          <strong>Página Inicial:</strong> Banner com cookies recém-assados, vitrine de sabores como chocolate e baunilha, opções de personalização, e galeria de embalagens.
+        </div>
         <div class="portfolio-item-content">
           <h3>MP Cookies</h3>
           <p><strong>Categoria:</strong> Loja de Alimentos</p>
@@ -182,8 +245,18 @@
     <h3>Entre em Contato</h3>
     <p>Email: contato@devloft.com.br</p>
     <p>Telefone: (11) 1234-5678</p>
+    <div class="contact-buttons">
+      <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon"> WhatsApp
+      </a>
+      <a href="https://www.instagram.com/devlofttech" target="_blank" class="instagram-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Icon"> Instagram
+      </a>
+      <a href="mailto:contato@devloft.com.br" class="gmail-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail Icon"> Gmail
+      </a>
+    </div>
     <p>© 2025 Devloft Tecnologia LTDA. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
-```
