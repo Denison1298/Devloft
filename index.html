@@ -10,70 +10,71 @@
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      background-color: #F9FAFB;
+      background-color: #F3F4F6; /* Cinza claro mais vibrante */
     }
     header {
-      background-color: #1E3A8A;
+      background-color: #1D4ED8; /* Azul vibrante */
       color: white;
       text-align: center;
-      padding: 2rem; /* Aumentado para melhor enquadramento */
+      padding: 2rem;
     }
     header img.logo {
-      max-height: 200px; /* Tamanho ajustado */
-      max-width: 90%; /* Evita ultrapassar limites */
+      max-height: 180px; /* Tamanho ajustado */
+      max-width: 90%; /* Evita transbordo */
       width: auto;
-      margin: 0 auto 1rem; /* Mais espaço abaixo */
+      margin: 0 auto 1rem; /* Espaçamento abaixo */
       display: block;
-      object-fit: contain;
-      padding: 0.5rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+      object-fit: contain; /* Enquadramento sem distorção */
     }
     header h1 {
-      font-size: 1.8rem; /* Reduzido para equilíbrio */
+      font-size: 1.8rem; /* Equilibrado com logo */
       margin: 0;
     }
     header p {
-      font-size: 1rem; /* Reduzido para equilíbrio */
+      font-size: 1rem; /* Equilibrado com logo */
       margin: 0.5rem 0;
     }
     nav {
       margin-top: 0.5rem;
     }
     nav a {
-      color: #BFDBFE;
+      color: #93C5FD; /* Azul brilhante */
       text-decoration: none;
       font-size: 1rem;
       margin: 0 1rem;
+      transition: color 0.3s;
     }
     nav a:hover {
+      color: #DBEAFE;
       text-decoration: underline;
     }
     .about {
-      background-color: #E5E7EB;
+      background-color: #DBEAFE; /* Azul claro vibrante */
       padding: 2rem 1rem;
       text-align: center;
     }
     .about h2 {
       font-size: 1.8rem;
       margin-bottom: 1rem;
-      color: #1E3A8A;
+      color: #1D4ED8;
     }
     .about p {
       max-width: 800px;
       margin: 0 auto;
       font-size: 1rem;
-      color: #4B5563;
+      color: #111827; /* Contraste maior */
     }
     .portfolio {
       padding: 2rem 1rem;
       max-width: 1200px;
       margin: 0 auto;
+      background: linear-gradient(to bottom, #F3F4F6, #DBEAFE); /* Gradiente sutil */
     }
     .portfolio h2 {
       font-size: 1.8rem;
       text-align: center;
       margin-bottom: 1.5rem;
-      color: #1E3A8A;
+      color: #1D4ED8;
     }
     .portfolio-grid {
       display: grid;
@@ -98,9 +99,9 @@
     }
     .portfolio-item-homepage {
       padding: 1rem;
-      background-color: #F9FAFB;
+      background-color: #F3F4F6;
       font-size: 0.9rem;
-      color: #4B5563;
+      color: #111827;
       border-bottom: 1px solid #E5E7EB;
     }
     .portfolio-item-content {
@@ -109,22 +110,24 @@
     .portfolio-item h3 {
       font-size: 1.5rem;
       margin: 0 0 0.5rem;
-      color: #1E3A8A;
+      color: #1D4ED8;
     }
     .portfolio-item p {
-      color: #4B5563;
+      color: #111827;
       margin: 0.5rem 0;
     }
     .portfolio-item a {
-      color: #1E90FF;
+      color: #3B82F6; /* Azul intenso */
       font-weight: bold;
       text-decoration: none;
+      transition: color 0.3s;
     }
     .portfolio-item a:hover {
+      color: #2563EB;
       text-decoration: underline;
     }
     footer {
-      background-color: #1E3A8A;
+      background-color: #1D4ED8;
       color: white;
       text-align: center;
       padding: 1.5rem;
@@ -178,7 +181,7 @@
     }
     @media (max-width: 600px) {
       header img.logo {
-        max-height: 140px; /* Tamanho ajustado para telas pequenas */
+        max-height: 120px; /* Tamanho ajustado */
       }
       header h1 {
         font-size: 1.4rem;
@@ -202,7 +205,7 @@
 <body>
   <header>
     <img src="logoo1.png" alt="Devloft Tecnologia LTDA Logo" class="logo">
-    <h1>Devloft Tecnologia LTDA</h1> <!-- Re-adicionado para consistência -->
+    <h1>Devloft Tecnologia LTDA</h1>
     <p>Soluções digitais inovadoras com preços justos</p>
     <nav>
       <a href="index.html">Portfólio</a>
@@ -228,7 +231,7 @@
         <div class="portfolio-item-content">
           <h3>Mandrake Grifes</h3>
           <p><strong>Categoria:</strong> Loja de Roupas</p>
-          <p>Uma loja online de moda que oferece roupas modernas e estilosas para todos os públicos. Com design intuitivo, proporciona uma experiência de compra fluida e atrativa.</p>
+          <p>Uma loja online de moda que oferece roupas modernas e estilosas para todos os públicos. Com design intuitivo, proporciona uma experiência de compra fluida.</p>
           <a href="https://mandrakegrifes.com.br" target="_blank">Visitar Site</a>
         </div>
       </div>
