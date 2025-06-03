@@ -10,33 +10,37 @@
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      background-color: #F9FAFB; /* Cinza claro para fundo neutro */
+      background-color: #F9FAFB;
     }
     header {
-      background-color: #1E3A8A; /* Azul escuro para harmonizar com logo */
+      background-color: #1E3A8A;
       color: white;
       text-align: center;
-      padding: 1.5rem;
+      padding: 2rem; /* Aumentado para melhor enquadramento */
     }
     header img.logo {
-      max-height: 220px;
+      max-height: 200px; /* Tamanho ajustado */
+      max-width: 90%; /* Evita ultrapassar limites */
       width: auto;
-      margin: 0 auto 0.5rem;
+      margin: 0 auto 1rem; /* Mais espaço abaixo */
       display: block;
+      object-fit: contain;
+      padding: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     }
     header h1 {
-      font-size: 2rem;
+      font-size: 1.8rem; /* Reduzido para equilíbrio */
       margin: 0;
     }
     header p {
-      font-size: 1.1rem;
+      font-size: 1rem; /* Reduzido para equilíbrio */
       margin: 0.5rem 0;
     }
     nav {
       margin-top: 0.5rem;
     }
     nav a {
-      color: #BFDBFE; /* Azul claro para links */
+      color: #BFDBFE;
       text-decoration: none;
       font-size: 1rem;
       margin: 0 1rem;
@@ -45,7 +49,7 @@
       text-decoration: underline;
     }
     .about {
-      background-color: #E5E7EB; /* Cinza mais suave */
+      background-color: #E5E7EB;
       padding: 2rem 1rem;
       text-align: center;
     }
@@ -112,7 +116,7 @@
       margin: 0.5rem 0;
     }
     .portfolio-item a {
-      color: #1E90FF; /* Azul vibrante para links */
+      color: #1E90FF;
       font-weight: bold;
       text-decoration: none;
     }
@@ -150,19 +154,19 @@
       transition: background-color 0.3s;
     }
     .whatsapp-button {
-      background-color: #25D366; /* Verde WhatsApp */
+      background-color: #25D366;
     }
     .whatsapp-button:hover {
       background-color: #20B358;
     }
     .instagram-button {
-      background: linear-gradient(45deg, #F09433, #E6683C, #DC2743, #CC2366, #BC1888); /* Gradiente Instagram */
+      background: linear-gradient(45deg, #F09433, #E6683C, #DC2743, #CC2366, #BC1888);
     }
     .instagram-button:hover {
       opacity: 0.9;
     }
     .gmail-button {
-      background-color: #D14836; /* Vermelho Gmail */
+      background-color: #D14836;
     }
     .gmail-button:hover {
       background-color: #C13524;
@@ -174,10 +178,10 @@
     }
     @media (max-width: 600px) {
       header img.logo {
-        max-height: 160px;
+        max-height: 140px; /* Tamanho ajustado para telas pequenas */
       }
       header h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
       }
       header p {
         font-size: 0.9rem;
@@ -198,6 +202,7 @@
 <body>
   <header>
     <img src="logoo1.png" alt="Devloft Tecnologia LTDA Logo" class="logo">
+    <h1>Devloft Tecnologia LTDA</h1> <!-- Re-adicionado para consistência -->
     <p>Soluções digitais inovadoras com preços justos</p>
     <nav>
       <a href="index.html">Portfólio</a>
