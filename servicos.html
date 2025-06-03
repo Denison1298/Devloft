@@ -10,33 +10,37 @@
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      background-color: #F9FAFB; /* Cinza claro para fundo neutro */
+      background-color: #F9FAFB;
     }
     header {
-      background-color: #1E3A8A; /* Azul escuro para harmonizar com logo */
+      background-color: #1E3A8A;
       color: white;
       text-align: center;
-      padding: 1.5rem;
+      padding: 2rem; /* Aumentado para melhor enquadramento */
     }
     header img.logo {
-      max-height: 120px;
+      max-height: 200px; /* Tamanho ajustado */
+      max-width: 90%; /* Evita ultrapassar limites */
       width: auto;
-      margin: 0 auto 0.5rem;
+      margin: 0 auto 1rem; /* Mais espaço abaixo */
       display: block;
+      object-fit: contain;
+      padding: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     }
     header h1 {
-      font-size: 2rem;
+      font-size: 1.8rem; /* Reduzido para equilíbrio */
       margin: 0;
     }
     header p {
-      font-size: 1.1rem;
+      font-size: 1rem; /* Reduzido para equilíbrio */
       margin: 0.5rem 0;
     }
     nav {
       margin-top: 0.5rem;
     }
     nav a {
-      color: #BFDBFE; /* Azul claro para links */
+      color: #BFDBFE;
       text-decoration: none;
       font-size: 1rem;
       margin: 0 1rem;
@@ -91,7 +95,7 @@
     .service-item .price {
       font-size: 1.2rem;
       font-weight: bold;
-      color: #1E90FF; /* Azul vibrante para preços */
+      color: #1E90FF;
     }
     footer {
       background-color: #1E3A8A;
@@ -148,10 +152,10 @@
     }
     @media (max-width: 600px) {
       header img.logo {
-        max-height: 80px;
+        max-height: 140px; /* Tamanho ajustado para telas pequenas */
       }
       header h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
       }
       header p {
         font-size: 0.9rem;
