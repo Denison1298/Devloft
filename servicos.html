@@ -10,10 +10,10 @@
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      background-color: #F3F4F6; /* Cinza claro mais vibrante */
+      background-color: #F3F4F6; /* Cinza claro vibrante */
     }
     header {
-      background-color: #1D4ED8; /* Azul vibrante */
+      background-color: #1E3A8A; /* Azul escuro conforme logo */
       color: white;
       text-align: center;
       padding: 2rem;
@@ -38,27 +38,27 @@
       margin-top: 0.5rem;
     }
     nav a {
-      color: #93C5FD; /* Azul brilhante */
+      color: #BFDBFE; /* Azul claro suave */
       text-decoration: none;
       font-size: 1rem;
       margin: 0 1rem;
       transition: color 0.3s;
     }
     nav a:hover {
-      color: #DBEAFE;
+      color: #E5E7EB;
       text-decoration: underline;
     }
     .services {
       padding: 2rem 1rem;
       max-width: 1200px;
       margin: 0 auto;
-      background: linear-gradient(to bottom, #F3F4F6, #DBEAFE); /* Gradiente sutil */
+      background: linear-gradient(to bottom, #F3F4F6, #BFDBFE); /* Gradiente com azul escuro */
     }
     .services h2 {
       font-size: 1.8rem;
       text-align: center;
       margin-bottom: 1.5rem;
-      color: #1D4ED8;
+      color: #1E3A8A; /* Azul escuro */
     }
     .services-grid {
       display: grid;
@@ -80,6 +80,7 @@
       height: 150px;
       object-fit: cover;
       background-color: #E5E7EB;
+      border-radius: 50%; /* Imagens redondas */
     }
     .service-item-content {
       padding: 1.5rem;
@@ -87,7 +88,7 @@
     .service-item h3 {
       font-size: 1.5rem;
       margin: 0 0 0.5rem;
-      color: #1D4ED8;
+      color: #1E3A8A; /* Azul escuro */
     }
     .service-item p {
       color: #111827;
@@ -96,14 +97,14 @@
     .service-item .price {
       font-size: 1.2rem;
       font-weight: bold;
-      color: #3B82F6; /* Azul intenso */
+      color: #2563EB; /* Azul mais escuro e intenso */
       transition: color 0.3s;
     }
     .service-item .price:hover {
-      color: #2563EB;
+      color: #1E40AF;
     }
     footer {
-      background-color: #1D4ED8;
+      background-color: #1E3A8A; /* Azul escuro */
       color: white;
       text-align: center;
       padding: 1.5rem;
@@ -181,6 +182,7 @@
 <body>
   <header>
     <img src="logoo2.png" alt="Devloft Tecnologia LTDA Logo" class="logo">
+    <h1>Devloft Tecnologia LTDA</h1>
     <p>Soluções digitais inovadoras com preços justos</p>
     <nav>
       <a href="index.html">Portfólio</a>
@@ -192,47 +194,53 @@
     <h2>Nossos Serviços</h2>
     <div class="services-grid">
       <div class="service-item">
-        <img src="https://via.placeholder.com/300x150.png?text=Site+Simples" alt="Site Simples">
+        <!-- Imagem: Pexels, https://www.pexels.com/photo/laptop-showing-website-on-screen-6953879/ -->
+        <img src="https://images.pexels.com/photos/6953879/pexels-photo-6953879.jpeg" alt="Site Simples">
         <div class="service-item-content">
           <h3>Site Simples</h3>
           <p>Perfeito para negócios locais, com até 10 páginas, formulário de contato e design responsivo. Ideal para começar online.</p>
-          <p class="price">A partir de R$ 1.800</p>
+          <p class="price">A partir de R$ 1.800,00</p>
         </div>
       </div>
       <div class="service-item">
-        <img src="https://via.placeholder.com/300x150.png?text=Site+E-commerce" alt="Site E-commerce">
+        <!-- Imagem: Unsplash, https://unsplash.com/photos/black-shopping-cart-icon-on-white-background-oTKF3N_B1kU -->
+        <img src="https://images.unsplash.com/photo-1592489635298-e99e075a0a4b" alt="Site E-commerce">
         <div class="service-item-content">
           <h3>Site de E-commerce</h3>
           <p>Loja virtual com catálogo, carrinho, pagamentos online e gerenciamento fácil. Comece a vender seus produtos hoje!</p>
-          <p class="price">A partir de R$ 6.000</p>
+          <p class="price">A partir de R$ 6.000,00</p>
         </div>
       </div>
       <div class="service-item">
-        <img src="https://via.placeholder.com/300x150.png?text=Site+Personalizado" alt="Site Personalizado">
+        <!-- Imagem: Pexels, https://www.pexels.com/photo/mockup-of-a-modern-website-on-a-laptop-6953880/ -->
+        <img src="https://images.pexels.com/photos/6953880/pexels-photo-6953880.jpeg" alt="Site Personalizado">
         <div class="service-item-content">
           <h3>Site Personalizado</h3>
           <p>Site sob medida com design único e funcionalidades avançadas, como integrações com APIs ou formulários dinâmicos.</p>
-          <p class="price">A partir de R$ 10.000</p>
+          <p class="price">A partir de R$ 10.000,00</p>
         </div>
       </div>
       <div class="service-item">
-        <img src="https://via.placeholder.com/300x150.png?text=Sistema+Web+Simples" alt="Sistema Web Simples">
+        <!-- Imagem: Unsplash, https://unsplash.com/photos/person-using-laptop-with-dashboard-on-screen-8pb7Hq539Zw -->
+        <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942e7" alt="Sistema Web Simples">
         <div class="service-item-content">
           <h3>Sistema Web Simples</h3>
           <p>Painel administrativo para gerenciar clientes, pedidos ou dados, com login seguro e relatórios básicos.</p>
-          <p class="price">A partir de R$ 7.000</p>
+          <p class="price">A partir de R$ 7.000,00</p>
         </div>
       </div>
       <div class="service-item">
-        <img src="https://via.placeholder.com/300x150.png?text=Sistema+Web+Intermediário" alt="Sistema Web Intermediário">
+        <!-- Imagem: Pexels, https://www.pexels.com/photo/dashboard-on-computer-screen-1181298/ -->
+        <img src="https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg" alt="Sistema Web Intermediário">
         <div class="service-item-content">
           <h3>Sistema Web Intermediário</h3>
           <p>CRM ou sistema robusto com dashboards, notificações e integrações, ideal para otimizar processos.</p>
-          <p class="price">A partir de R$ 18.000</p>
+          <p class="price">A partir de R$ 18.000,00</p>
         </div>
       </div>
       <div class="service-item">
-        <img src="https://via.placeholder.com/300x150.png?text=Serviços+Adicionais" alt="Serviços Adicionais">
+        <!-- Imagem: Unsplash, https://unsplash.com/photos/digital-marketing-tools-on-screen-7oS_6W63e0o -->
+        <img src="https://images.unsplash.com/photo-1551288049-bcc0d03a72a1" alt="Serviços Adicionais">
         <div class="service-item-content">
           <h3>Serviços Adicionais</h3>
           <p>Domínio (R$ 40–R$ 150/ano), hospedagem (R$ 10–R$ 300/mês), manutenção (R$ 80–R$ 1.500/mês), SEO (R$ 800–R$ 3.000).</p>
