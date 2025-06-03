@@ -16,22 +16,24 @@
       background-color: #1E3A8A; /* Azul escuro conforme logo */
       color: white;
       text-align: center;
-      padding: 2rem;
+      padding: 1.5rem; /* Padding reduzido */
+      max-width: 1200px; /* Largura limitada */
+      margin: 0 auto; /* Centralizado */
     }
     header img.logo {
-      max-height: 180px; /* Tamanho ajustado */
+      max-height: 120px; /* Tamanho ajustado para banner */
       max-width: 90%; /* Evita transbordo */
       width: auto;
-      margin: 0 auto 1rem; /* Espaçamento abaixo */
+      margin: 0 auto 0.5rem; /* Espaçamento reduzido */
       display: block;
       object-fit: contain; /* Enquadramento sem distorção */
     }
     header h1 {
-      font-size: 1.8rem; /* Equilibrado com logo */
+      font-size: 1.6rem; /* Menor para profissionalismo */
       margin: 0;
     }
     header p {
-      font-size: 1rem; /* Equilibrado com logo */
+      font-size: 0.9rem; /* Menor para equilíbrio */
       margin: 0.5rem 0;
     }
     nav {
@@ -40,8 +42,8 @@
     nav a {
       color: #BFDBFE; /* Azul claro suave */
       text-decoration: none;
-      font-size: 1rem;
-      margin: 0 1rem;
+      font-size: 0.9rem; /* Menor para navegação compacta */
+      margin: 0 0.75rem;
       transition: color 0.3s;
     }
     nav a:hover {
@@ -80,7 +82,7 @@
       height: 150px;
       object-fit: cover;
       background-color: #E5E7EB;
-      /* Removido border-radius: 50% para formato retangular padrão */
+      /* Formato retangular padrão */
     }
     .service-item-content {
       padding: 1.5rem;
@@ -158,17 +160,18 @@
     }
     @media (max-width: 600px) {
       header img.logo {
-        max-height: 120px; /* Tamanho ajustado */
+        max-height: 80px; /* Tamanho ajustado para banner em telas menores */
       }
       header h1 {
-        font-size: 1.4rem;
+        font-size: 1.2rem; /* Menor para telas pequenas */
       }
       header p {
-        font-size: 0.9rem;
+        font-size: 0.8rem; /* Menor para equilíbrio */
       }
       nav a {
         display: block;
         margin: 0.5rem 0;
+        font-size: 0.8rem; /* Navegação compacta */
       }
       .services-grid {
         grid-template-columns: 1fr;
@@ -181,7 +184,7 @@
 </head>
 <body>
   <header>
-    <img src="logoo2.png" alt="Devloft Tecnologia LTDA Logo" class="logo">
+    <img src="logoo2.png" alt="Devloft Tecnologia LTDA Banner" class="logo">
     <h1>Devloft Tecnologia LTDA</h1>
     <p>Soluções digitais inovadoras com preços justos</p>
     <nav>
@@ -221,8 +224,8 @@
         </div>
       </div>
       <div class="service-item">
-        <!-- Imagem: Pexels, https://www.pexels.com/photo/simple-web-system-dashboard-6696150/ -->
-        <img src="https://images.pexels.com/photos/7688337/pexels-photo-7688337.jpeg">
+        <!-- Imagem: Pexels, https://www.pexels.com/photo/laptop-with-admin-panel-7688337/ -->
+        <img src="https://images.pexels.com/photos/7688337/pexels-photo-7688337.jpeg" alt="Sistema Web Simples">
         <div class="service-item-content">
           <h3>Sistema Web Simples</h3>
           <p>Painel administrativo para gerenciar clientes, pedidos ou dados, com login seguro e relatórios básicos.</p>
